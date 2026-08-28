@@ -95,7 +95,14 @@ def own_repos():
         batch = api("/users/%s/repos?type=owner&per_page=100&page=%d" % (USER, page))
         if not batch:
             break
-        repos += [r for r in batch if not r["fork"] and not r["archived"]]
+        repos += [
+            r
+            for r in batch
+            # The profile repo is excluded on purpose: GitHub reads it as
+            # Python because of this very script, and counting the README's
+            # own tooling as a project would pad the chart.
+            if not r["fork"] and not r["archived"] and r["name"] != USER
+        ]
         if len(batch) < 100:
             break
         page += 1
