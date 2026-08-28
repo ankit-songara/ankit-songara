@@ -79,19 +79,6 @@ Mostly practice projects and small tools, shared in case they are useful to some
 
 ---
 
-## `~/` Recent Activity
-
-<!-- ACTIVITY:START -->
-| | repo | when |
-| --- | --- | --- |
-| `started` | [**ankit-songara**](https://github.com/ankit-songara/ankit-songara) | 26m ago |
-| `pushed to` | [**coldreach**](https://github.com/ankit-songara/coldreach) | 57m ago |
-
-<sub>Auto-generated from the GitHub API · last refreshed 28 Aug 2026, 06:06 UTC</sub>
-<!-- ACTIVITY:END -->
-
----
-
 ## `~/` Languages
 
 <div align="center">
@@ -126,6 +113,6 @@ Mostly practice projects and small tools, shared in case they are useful to some
 ankit@github:~$ echo "happy to talk about Go, backend and system design"
 ```
 
-<sub>The activity, language and contribution sections update themselves on a schedule.</sub>
+<sub>The language and contribution cards redraw themselves on a schedule.</sub>
 
 </div>
