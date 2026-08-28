@@ -3,7 +3,8 @@
 Two sections are rewritten in place, between HTML comment markers:
 
   ACTIVITY  most recent public activity, one row per non-fork repo
-  LANGS     language byte totals aggregated across all original repos
+
+The language card is rendered separately, by scripts/render_cards.py.
 
 Everything comes from the public GitHub REST API, so nothing here depends on
 a third-party card service staying up. Run by
@@ -20,8 +21,6 @@ USER = os.environ.get("GH_USER", "ankit-songara")
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
 README = "README.md"
 MAX_ROWS = 5
-MAX_LANGS = 8
-BAR_WIDTH = 26
 
 VERB = {
     "PushEvent": "pushed to",
@@ -30,9 +29,6 @@ VERB = {
     "IssuesEvent": "filed an issue in",
     "ReleaseEvent": "released",
 }
-
-# Languages that are almost always vendored assets rather than work I wrote.
-LANG_SKIP = {"Makefile", "Dockerfile", "Batchfile", "Procfile"}
 
 
 def api(path):
@@ -99,36 +95,6 @@ def render_activity(own_names):
     return "| | repo | when |\n| --- | --- | --- |\n" + "\n".join(rows)
 
 
-def render_langs(repos):
-    """Bars by primary language per repo.
-
-    Deliberately not byte counts: a single vendored frontend or committed
-    asset directory outweighs every hand-written Go service and makes the
-    chart say the opposite of what the work actually is.
-    """
-    totals = {}
-    for repo in repos:
-        lang = repo.get("language")
-        if lang and lang not in LANG_SKIP:
-            totals[lang] = totals.get(lang, 0) + 1
-
-    grand = sum(totals.values())
-    if not grand:
-        return None
-
-    top = sorted(totals.items(), key=lambda kv: (-kv[1], kv[0]))[:MAX_LANGS]
-    width = max(len(lang) for lang, _ in top)
-    lines = []
-    for lang, count in top:
-        pct = 100.0 * count / grand
-        filled = int(round(pct / 100 * BAR_WIDTH))
-        lines.append(
-            "%-*s  %s%s  %2d repo%s"
-            % (width, lang, "█" * filled, "░" * (BAR_WIDTH - filled), count, "" if count == 1 else "s")
-        )
-    header = "primary language across %d original repos\n\n" % grand
-    return "```text\n%s%s\n```" % (header, "\n".join(lines))
-
 
 def replace(text, tag, body):
     if body is None:
@@ -145,12 +111,10 @@ def main():
     footer = "\n\n<sub>Auto-generated from the GitHub API · last refreshed %s</sub>" % stamp
 
     activity = render_activity(own_names)
-    langs = render_langs(repos)
 
     with open(README, encoding="utf-8") as fh:
         text = fh.read()
     new = replace(text, "ACTIVITY", activity and activity + footer)
-    new = replace(new, "LANGS", langs and langs + footer)
 
     if new == text:
         print("no change")

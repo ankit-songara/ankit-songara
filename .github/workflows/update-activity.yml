@@ -22,13 +22,19 @@ jobs:
           GH_USER: ${{ github.repository_owner }}
         run: python3 scripts/update_activity.py
 
+      - name: Redraw SVG cards
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USER: ${{ github.repository_owner }}
+        run: python3 scripts/render_cards.py
+
       - name: Commit if changed
         run: |
-          if [ -n "$(git status --porcelain README.md)" ]; then
+          if [ -n "$(git status --porcelain README.md assets)" ]; then
             git config user.name  "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add README.md
-            git commit -m "chore: refresh currently-working-on section"
+            git add README.md assets
+            git commit -m "chore: refresh activity table and SVG cards"
             git push
           else
             echo "No change."

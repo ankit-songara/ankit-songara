@@ -1,7 +1,11 @@
 <div align="center">
 
 <a href="https://ankit-songara.github.io">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=24&pause=1400&color=58A6FF&center=true&vCenter=true&width=680&height=42&lines=Backend+Engineer;Go+%C2%B7+Distributed+Systems+%C2%B7+Payments;Learning+in+public." alt="Backend Engineer" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ankit-songara/ankit-songara/main/assets/header-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ankit-songara/ankit-songara/main/assets/header-light.svg" />
+    <img width="680" alt="Backend Engineer · Go, distributed systems, payments" src="https://raw.githubusercontent.com/ankit-songara/ankit-songara/main/assets/header-dark.svg" />
+  </picture>
 </a>
 
 <br />
@@ -80,29 +84,25 @@ Mostly practice projects and small tools, shared in case they are useful to some
 <!-- ACTIVITY:START -->
 | | repo | when |
 | --- | --- | --- |
-| `started` | [**ankit-songara**](https://github.com/ankit-songara/ankit-songara) | 16m ago |
-| `pushed to` | [**coldreach**](https://github.com/ankit-songara/coldreach) | 46m ago |
+| `started` | [**ankit-songara**](https://github.com/ankit-songara/ankit-songara) | 26m ago |
+| `pushed to` | [**coldreach**](https://github.com/ankit-songara/coldreach) | 56m ago |
 
-<sub>Auto-generated from the GitHub API · last refreshed 28 Aug 2026, 05:56 UTC</sub>
+<sub>Auto-generated from the GitHub API · last refreshed 28 Aug 2026, 06:06 UTC</sub>
 <!-- ACTIVITY:END -->
 
 ---
 
 ## `~/` Languages
 
-<!-- LANGS:START -->
-```text
-primary language across 15 original repos
+<div align="center">
 
-Go          ██████████░░░░░░░░░░░░░░░░   6 repos
-Python      ███████░░░░░░░░░░░░░░░░░░░   4 repos
-HTML        █████░░░░░░░░░░░░░░░░░░░░░   3 repos
-C++         ██░░░░░░░░░░░░░░░░░░░░░░░░   1 repo
-TypeScript  ██░░░░░░░░░░░░░░░░░░░░░░░░   1 repo
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ankit-songara/ankit-songara/main/assets/langs-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ankit-songara/ankit-songara/main/assets/langs-light.svg" />
+  <img width="680" alt="Primary language across my repositories" src="https://raw.githubusercontent.com/ankit-songara/ankit-songara/main/assets/langs-dark.svg" />
+</picture>
 
-<sub>Auto-generated from the GitHub API · last refreshed 28 Aug 2026, 05:56 UTC</sub>
-<!-- LANGS:END -->
+</div>
 
 ---
 
