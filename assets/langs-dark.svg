@@ -1,29 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="680" height="226" viewBox="0 0 680 226" role="img" aria-label="languages">
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="256" viewBox="0 0 680 256" role="img" aria-label="languages">
 <style>text{font-family:ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;}</style>
-<rect x="0.5" y="0.5" width="679" height="225" rx="10" fill="#0D1117" stroke="#30363D"/>
+<rect x="0.5" y="0.5" width="679" height="255" rx="10" fill="#0D1117" stroke="#30363D"/>
 <path d="M0.5 10.5a10 10 0 0 1 10-10h659a10 10 0 0 1 10 10V32H0.5Z" fill="#161B22"/>
 <line x1="0.5" y1="32" x2="680" y2="32" stroke="#30363D"/>
 <circle cx="22" cy="16" r="5" fill="#FF5F56" opacity="0.85"/><circle cx="40" cy="16" r="5" fill="#FFBD2E" opacity="0.85"/><circle cx="58" cy="16" r="5" fill="#27C93F" opacity="0.85"/>
 <text x="340.0" y="21" fill="#8B949E" font-size="12" text-anchor="middle">languages</text>
-<text x="26" y="50" fill="#8B949E" font-size="12">primary language across 14 repositories</text>
+<text x="26" y="50" fill="#8B949E" font-size="12">primary language across 15 repositories</text>
 <text x="26" y="74" fill="#C9D1D9" font-size="14">Go</text>
 <rect x="124" y="65" width="460" height="10" rx="5" fill="#21262D"/>
-<rect x="124" y="65" width="197.1" height="10" rx="5" fill="#00ADD8"/>
+<rect x="124" y="65" width="184.0" height="10" rx="5" fill="#00ADD8"/>
 <text x="654" y="74" fill="#8B949E" font-size="13" text-anchor="end">6 repos</text>
 <text x="26" y="104" fill="#C9D1D9" font-size="14">HTML</text>
 <rect x="124" y="95" width="460" height="10" rx="5" fill="#21262D"/>
-<rect x="124" y="95" width="98.6" height="10" rx="5" fill="#E34C26"/>
+<rect x="124" y="95" width="92.0" height="10" rx="5" fill="#E34C26"/>
 <text x="654" y="104" fill="#8B949E" font-size="13" text-anchor="end">3 repos</text>
 <text x="26" y="134" fill="#C9D1D9" font-size="14">Python</text>
 <rect x="124" y="125" width="460" height="10" rx="5" fill="#21262D"/>
-<rect x="124" y="125" width="98.6" height="10" rx="5" fill="#3572A5"/>
+<rect x="124" y="125" width="92.0" height="10" rx="5" fill="#3572A5"/>
 <text x="654" y="134" fill="#8B949E" font-size="13" text-anchor="end">3 repos</text>
 <text x="26" y="164" fill="#C9D1D9" font-size="14">C++</text>
 <rect x="124" y="155" width="460" height="10" rx="5" fill="#21262D"/>
-<rect x="124" y="155" width="32.9" height="10" rx="5" fill="#F34B7D"/>
+<rect x="124" y="155" width="30.7" height="10" rx="5" fill="#F34B7D"/>
 <text x="654" y="164" fill="#8B949E" font-size="13" text-anchor="end">1 repo</text>
-<text x="26" y="194" fill="#C9D1D9" font-size="14">TypeScript</text>
+<text x="26" y="194" fill="#C9D1D9" font-size="14">JavaScript</text>
 <rect x="124" y="185" width="460" height="10" rx="5" fill="#21262D"/>
-<rect x="124" y="185" width="32.9" height="10" rx="5" fill="#3178C6"/>
+<rect x="124" y="185" width="30.7" height="10" rx="5" fill="#F1E05A"/>
 <text x="654" y="194" fill="#8B949E" font-size="13" text-anchor="end">1 repo</text>
+<text x="26" y="224" fill="#C9D1D9" font-size="14">TypeScript</text>
+<rect x="124" y="215" width="460" height="10" rx="5" fill="#21262D"/>
+<rect x="124" y="215" width="30.7" height="10" rx="5" fill="#3178C6"/>
+<text x="654" y="224" fill="#8B949E" font-size="13" text-anchor="end">1 repo</text>
 </svg>
